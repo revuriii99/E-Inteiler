@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DASHBOARD </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imprima&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <div class="top-bar">
+            <img src="ASSET/Time.svg">
+            <img src="ASSET/ICON.svg">
+        </div>
+
+        <div class="header">
+            <div class="greeting">
+                <h1>Halo, Selin</h1>
+                <span class="waving-hand"> 
+                <img src="ASSET/HELLO.png">
+                </span>
+            </div>
+            <p class="sub-greeting">Semangat belajarnya hari ini!</p>
+        </div>
+
+        <div class="main-content">
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon">
+                    <img src="ASSET/Tugas Aktif Icon.svg">
+                    </span>
+                    <span class="stat-label">Jumlah Tugas Kamu</span>
+                    <span class="stat-value">3</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                    <img src="ASSET/PRODUKTIVITAS.svg">    
+                    </span>
+                    <span class="stat-label">Produktivitas</span>
+                    <span class="stat-value">85%</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                    <img src="ASSET/DEADLINE.svg">   
+                    </span>
+                    <span class="stat-label">Deadline Hari Ini</span>
+                    <span class="stat-value">3</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">
+                    <img src="ASSET/WAKTU.svg">   
+                    </span>
+                    <span class="stat-label">Sesi Belajar</span>
+                    <span class="stat-value">8</span>
+                </div>
+            </div>
+
+            <button class="add-task-btn" id="btnAddTask">
+                <span class="plus-icon">＋</span>
+                <span class="text">
+                    <span class="title">Tambah Tugas Baru</span>
+                    <span class="description">Catat tugas dari semua platform</span>
+                </span>
+            </button>
+
+            <div class="upcoming-tasks">
+                <div class="section-header">
+                    <h2>Tugas Yang Akan Datang</h2>
+                    <a href="#" class="see-all">Lihat Semua</a>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-icon">
+                    <img src="ASSET/BUKU 1.svg">
+                    </div>
+                    <div class="task-details">
+                        <div class="task-title">Essay Sejarah Indonesia</div>
+                        <div class="task-info">Sejarah • Google Classroom</div>
+                    </div>
+                    <div class="task-deadline">
+                        <span class="deadline-tag">1 hari lagi</span>
+                        <span class="deadline-date">2 Mei 2026</span>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-icon">
+                    <img src="ASSET/BUKU 2.svg">
+                    </div>
+                    <div class="task-details">
+                        <div class="task-title">Praktikum Fisika - Laporan</div>
+                        <div class="task-info">Fisika • Moodle</div>
+                    </div>
+                    <div class="task-deadline">
+                        <span class="deadline-tag">2 hari lagi</span>
+                        <span class="deadline-date">3 Mei 2026</span>
+                    </div>
+                </div>
+
+                <div class="task-card">
+                    <div class="task-icon">
+                    <img src="ASSET/BUKU 3.svg">
+                    </div>
+                    <div class="task-details">
+                        <div class="task-title">Tugas Matematika Bab 5</div>
+                        <div class="task-info">Matematika • Google Classroom</div>
+                    </div>
+                    <div class="task-deadline">
+                        <span class="deadline-tag">4 hari lagi</span>
+                        <span class="deadline-date">5 Mei 2026</span>
+                    </div>
+                </div>
+
+            </div> </div> <nav class="bottom-nav">
+            <button class="nav-item active" id="tabHome">
+                <img src="ASSET/HOME.svg">
+                <span>Home</span>
+            </button>
+            <button class="nav-item" id="tabTasks">
+                <img src="ASSET/TASK LOGO.svg">
+                <span>Tasks</span>
+            </button>
+            <button class="nav-item" id="tabPomodoro">
+                <img src="ASSET/POMODORO LOGO.svg">
+                <span>Pomodoro</span>
+            </button>
+            <button class="nav-item" id="tabSettings">
+                <img src="ASSET/SETTINGS LOGO.svg">
+                <span>Settings</span>
+            </button>
+        </nav>
+
+    </div> <script src="script.js"></script>
+</body>
+</html>
