@@ -59,7 +59,9 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(180deg, var(--header-start) 0%, var(--header-end) 100%);
+    background-image: url(ASSET/GAMBAR\ BINTANG.jpeg);
+    background-size: cover;
+    background-position: center;  
     color: var(--text-white);
     padding: 20px 24px 30px 24px;
 }
