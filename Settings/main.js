@@ -22,3 +22,5 @@ navItems.forEach(function(item) {
   });
 });
 
+//lupa namain commit javascript tadi hehe
+
