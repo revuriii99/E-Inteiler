@@ -58,7 +58,7 @@ body {
 }
 
 /* Header */
-.header {
+header {
     background-image: url(ASSET/GAMBAR\ BINTANG.jpeg);
     background-size: cover;
     background-position: center;  
