@@ -189,18 +189,9 @@ body {
   position: relative;
 }
 
-#btn-back {
-  background-color: #2B68AE;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#btn-back img {
+  width: 16px;
+  height: 16px;
 }
 
 #edit-header h2 {
@@ -266,15 +257,19 @@ body {
   color: #221E52;
   background: white;
   outline: none;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
 .field-group a {
   font-size: 12px;
-  font-weight: 600;
-  color: #7C62C4;
+  font-weight: 400;
+  color: #0198F1;
   margin-top: 6px;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #0198F1;
+  display: inline-block;
+  width: fit-content;
 }
 
 #btn-simpan {
@@ -287,6 +282,6 @@ body {
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(10, 30, 80, 0.35);
 }
