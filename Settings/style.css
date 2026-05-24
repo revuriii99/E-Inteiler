@@ -304,3 +304,12 @@ body {
 #bottom-nav div:active {
   transform: scale(0.85);
 }
+
+.toggle.off {
+  background-color: #ccc;
+}
+
+.toggle.off::after {
+  right: auto;
+  left: 3px;
+}

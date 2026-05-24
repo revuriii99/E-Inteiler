@@ -22,5 +22,11 @@ navItems.forEach(function(item) {
   });
 });
 
+const toggles = document.querySelectorAll('.toggle');
+toggles.forEach(function(toggle) {
+  toggle.addEventListener('click', function() {
+    this.classList.toggle('off');
+  });
+});
 //lupa namain commit javascript tadi hehe
 
