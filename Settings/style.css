@@ -189,9 +189,19 @@ body {
   position: relative;
 }
 
+#btn-back {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
 #btn-back img {
-  width: 16px;
-  height: 16px;
+  width: 35px;
+  height: 35px;
+  filter: none;
 }
 
 #edit-header h2 {
@@ -284,4 +294,13 @@ body {
   cursor: pointer;
   font-family: 'Inclusive Sans', sans-serif;
   box-shadow: 0 4px 12px rgba(10, 30, 80, 0.35);
+}
+
+#bottom-nav div {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+#bottom-nav div:active {
+  transform: scale(0.85);
 }
