@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Inclusive+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #c8e6f5;
   display: flex;
   justify-content: center;
@@ -13,20 +15,23 @@ body {
 
 #page-settings {
   width: 402px;
-  height: 874px;
+  min-height: 874px;
   background-color: #dff0fb;
+  display: flex;
+  flex-direction: column;
 }
 
+/* PROFILE SECTION */
 #profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px 16px;
 }
 
 #profile-section h2 {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #1a237e;
   margin-bottom: 12px;
 }
@@ -41,14 +46,15 @@ body {
 
 #nama {
   font-size: 16px;
-  font-weight: bold;
-  color: #1a237e;
+  font-weight: 700;
+  color: #0A0733;
   margin-top: 10px;
 }
 
 #username {
   font-size: 12px;
-  color: #1565c0;
+  font-weight: 600;
+  color: #7C62C4;
   margin-top: 4px;
 }
 
@@ -60,6 +66,104 @@ body {
   border-radius: 20px;
   padding: 8px 48px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
+}
+
+/* PENGATURAN LABEL */
+#page-settings > p {
+  color: #221E52;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+/* SETTINGS LIST */
+#settings-list {
+  list-style: none;
+  margin: 0 16px;
+}
+
+#settings-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 8px;
+  border-bottom: 1px solid #c5dcee;
+  font-size: 13px;
+  font-weight: 600;
+  color: #221E52;
+}
+
+#settings-list li:last-child {
+  border-bottom: none;
+}
+
+#settings-list li img {
+  width: 20px;
+  height: 20px;
+}
+
+#settings-list li img:last-child {
+  margin-left: auto;
+}
+
+/* TOGGLE */
+.toggle {
+  margin-left: auto;
+  width: 38px;
+  height: 22px;
+  background-color: #7C62C4;
+  border-radius: 11px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 3px;
+  right: 3px;
+}
+
+/* BOTTOM NAV */
+#bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a237e;
+  padding: 12px 0 16px;
+  border-radius: 20px 20px 0 0;
+  margin-top: auto;
+}
+
+#bottom-nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255,255,255,0.6);
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 11px;
+}
+
+#bottom-nav div.active {
+  color: white;
+}
+
+#bottom-nav img {
+  width: 22px;
+  height: 22px;
+}
+
+#bottom-nav div.active img {
+  background-color: #29b6f6;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
 }
