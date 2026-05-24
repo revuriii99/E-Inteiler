@@ -12,7 +12,54 @@ body {
 }
 
 #page-settings {
-  width: 375px;
-  min-height: 100vh;
+  width: 402px;
+  height: 874px;
   background-color: #dff0fb;
+}
+
+#profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#profile-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 12px;
+}
+
+#profile-section img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 6px;
+}
+
+#nama {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a237e;
+  margin-top: 10px;
+}
+
+#username {
+  font-size: 12px;
+  color: #1565c0;
+  margin-top: 4px;
+}
+
+#btn-edit {
+  margin-top: 12px;
+  background-color: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 48px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
