@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="phone-shell" id="phoneShell" data-state="ready" data-phase="study">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span class="time">9:30</span>
+      <img src="assets/Dnd.svg" alt="DND" id="dndIcon" class="dnd-icon" />
+      <div class="icons">
+        <img src="assets/Wifi.svg" alt="wifi" />
+        <img src="assets/Signal.svg" alt="signal" />
+        <img src="assets/Battery.svg" alt="battery" />
+      </div>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <span class="title">Timer</span>
+      <button class="music-btn" id="musicBtn" title="Toggle Music">
+        <img src="assets/MusicPlay.svg" alt="music" id="musicIcon" />
+      </button>
+    </div>
+
+    <!-- MAIN SCREEN CONTENT -->
+    <div class="screen-content">
+
+      <div class="timer-area">
+        <div class="timer-ring-wrapper" id="timerRingWrapper">
+
+          <svg class="timer-svg" viewBox="0 0 268 268" id="timerSvg">
+            <defs>
+              <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%"   stop-color="#91E1FD" />
+                <stop offset="50%"  stop-color="#0198F1" />
+                <stop offset="100%" stop-color="#221E52" />
+              </linearGradient>
+            </defs>
+            <!-- Track abu -->
+            <circle cx="134" cy="134" r="116"
+              fill="none" stroke="#D5D5DC" stroke-width="18" />
+            <!-- Arc biru -->
+            <circle id="progressRing"
+              cx="134" cy="134" r="116"
+              fill="none"
+              stroke="url(#ringGradient)"
+              stroke-width="18"
+              stroke-linecap="round"
+              transform="rotate(-90 134 134)"
+            />
+          </svg>
+
+          <div class="timer-inner" id="timerInner">
+            <img src="assets/Clock.svg"
+            id="clockIcon"
+            class="clock-icon">
+            <div class="timer-display" id="timerDisplay"> 
+              25:00
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="status-text" id="statusText">
+        <div class="status-dot"></div>
+        <span id="statusLabel">Ayo Mulai!</span>
+      </div>
+
+      <button class="main-btn" id="mainBtn">Mulai!</button>
+
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+      <div class="nav-item" data-nav="home">
+        <img src="assets/Home.svg" alt="Home" />
+        <span>Home</span>
+      </div>
+      <div class="nav-item" data-nav="tasks">
+        <img src="assets/Tasks.svg" alt="Tasks" />
+        <span>Tasks</span>
+      </div>
+      <div class="nav-item active nav-pomodoro" data-nav="pomodoro">
+        <img src="assets/Pomodoro.svg" alt="Pomodoro" />
+        <span>Pomodoro</span>
+      </div>
+      <div class="nav-item" data-nav="settings">
+        <img src="assets/Settings.svg" alt="Settings" />
+        <span>Settings</span>
+      </div>
+    </nav>
+    
+    <!-- TIME SELECT -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-sheet">
+        <div class="modal-handle"></div>
+        <img src="assets/TimeSelect.png" alt="Time Select" class="modal-placeholder" />
+      </div>
+    </div>
+ 
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
