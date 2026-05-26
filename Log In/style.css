@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+} 
+:root {
+    --bg-main: #E8FAFF;
+    --bg-outer: #DADADA;
+    --header-start: #0A0733;
+    --header-end: #221E52;
+    --purple-btn: #7C62C4;
+    --blue-nav: #2B68AE;
+    --blue-accent: #0198F1;
+    --text-black: #000000;
+    --text-dark: #444444;
+    --text-muted: #7F8895;
+    --text-white: #FFFFFF;
+    --card-bg: #FFFFFF;
+
+    --font-main: 'Inclusive Sans', sans-serif;
+    --font-extra: 'Imprima', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-outer); 
+}
+
+
+.signup-container {
+    width: 402px; 
+    height: 700px; 
+    background-color: var(--bg-main);
+    border: 1px solid var(--text-muted);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.top-bar {
+    background-color: var(--header-start);
+    color: var(--text-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px 4px 24px;
+    font-family: var(--font-extra);
+    font-size: 14px;
+}
+
+.top-bar .icons {
+    display: flex;
+    gap: 6px;
+}
+
+.logo-section, .logo-section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -70px;
+    margin-bottom: -120px;
+}
+
+.logo-section2{
+margin-top: 50px;
+}
+
+.logo{
+    width: 402px;
+    height: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    width: 320px;
+    margin-bottom: 4px;
+    padding: 1px;
+}
+.input-box input{
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid var(--text-muted);
+    font-family: var(--font-main);
+}
+
+.alt-option{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.alt-option p{
+font-size: 13px;
+font-family: var(--font-main);
+color: var(--text-muted);
+margin-bottom: 20px;
+}
+
+.continue-google,
+.buat-akun {
+    width: 230px;
+    height: 36px;
+    border-radius: 5px;
+    font-family: var(--font-main);
+    font-size: 14px;
+}
+
+.continue-google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: -10px;
+    border: 1px solid var(--text-muted);
+    background-color: var(--card-bg);
+    box-shadow: 0px 1px 3px 0px rgb(159, 159, 159);
+    color: var(--text-dark);
+}
+
+.continue-google img {
+    width: 15px;
+}
+
+.buat-akun {
+    margin-top: 5px;
+    border: 0px;
+    background-color: var(--blue-accent);
+    color: var(--card-bg);
+    box-shadow: 0px 4px 0px 0px var(--blue-nav);
+}
+
+.sudah-punya-akun, .belum-punya-akun{
+    align-self: center;
+    font-size: 13px;
+    color: var(--text-dark);
+}
+
+.sudah-punya-akun a, .belum-punya-akun a{
+    align-self: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--text-dark);
+}
